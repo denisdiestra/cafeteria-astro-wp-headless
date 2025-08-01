@@ -17,7 +17,7 @@ export function formatDate(dateSrt: string): string {
 // }
 
 export function formatAmount(amount: number): string {
-    return 'S/.  ' + new Intl.NumberFormat('es-PE', {
+    return 'S/' + new Intl.NumberFormat('es-PE', {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2
     }).format(amount);
